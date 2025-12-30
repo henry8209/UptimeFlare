@@ -62,8 +62,8 @@ const workerConfig: WorkerConfig = {
       name: 'GCP VM SSH',
       method: 'TCP_PING',
       // 換成你的 VM 公網 IP:22
-      target: '34.80.123.45:22',
-      tooltip: 'GCP VM SSH 連線',
+      target: '35.209.34.109:22',
+      tooltip: 'h8-v2ray-233boy-ssh',
       statusPageLink: 'https://console.cloud.google.com/compute/',
       timeout: 5000,
     },
@@ -73,8 +73,8 @@ const workerConfig: WorkerConfig = {
       name: 'GCP VM RDP',
       method: 'TCP_PING',
       // 換成你的 VM 公網 IP:3389
-      target: '34.80.123.45:3389',
-      tooltip: 'GCP VM RDP 連線',
+      target: '136.117.54.74:13800',
+      tooltip: '9708hy-095647-rdp',
       statusPageLink: 'https://console.cloud.google.com/compute/',
       timeout: 5000,
     },
