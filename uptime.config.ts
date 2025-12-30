@@ -56,25 +56,36 @@ const workerConfig: WorkerConfig = {
       // checkProxyFallback: true,
     },
     // Example TCP Monitor
-    // GCP VM SSH
+    // GCP VM SSH #1
     {
       id: 'gcp_vm_ssh',
-      name: 'GCP VM SSH',
+      name: 'h8-us-lowa-ssh',
       method: 'TCP_PING',
       // 換成你的 VM 公網 IP:22
       target: '35.209.34.109:22',
-      tooltip: 'h8-v2ray-233boy-ssh',
+      tooltip: 'GCP VM SSH 連線',
       statusPageLink: 'https://console.cloud.google.com/compute/',
       timeout: 5000,
     },
-    // GCP VM RDP
+    // GCP VM SSH #2
+    {
+      id: 'gcp_vm_ssh',
+      name: 'tmpp-us-oregon-ssh',
+      method: 'TCP_PING',
+      // 換成你的 VM 公網 IP:22
+      target: '35.212.214.116:22',
+      tooltip: 'GCP VM SSH 連線',
+      statusPageLink: 'https://console.cloud.google.com/compute/',
+      timeout: 5000,
+    },    
+    // GCP VM RDP #1
     {
       id: 'gcp_vm_rdp',
-      name: 'GCP VM RDP',
+      name: '9708hy-095647-rdp',
       method: 'TCP_PING',
       // 換成你的 VM 公網 IP:3389
       target: '136.117.54.74:13800',
-      tooltip: '9708hy-095647-rdp',
+      tooltip: 'GCP VM RDP 連線',
       statusPageLink: 'https://console.cloud.google.com/compute/',
       timeout: 5000,
     },
