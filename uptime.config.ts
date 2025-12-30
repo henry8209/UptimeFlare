@@ -56,15 +56,26 @@ const workerConfig: WorkerConfig = {
       // checkProxyFallback: true,
     },
     // Example TCP Monitor
+    // GCP VM SSH
     {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
-      // `method` should be `TCP_PING` for tcp monitors
+      id: 'gcp_vm_ssh',
+      name: 'GCP VM SSH',
       method: 'TCP_PING',
-      // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
-      tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
+      // 換成你的 VM 公網 IP:22
+      target: '34.80.123.45:22',
+      tooltip: 'GCP VM SSH 連線',
+      statusPageLink: 'https://console.cloud.google.com/compute/',
+      timeout: 5000,
+    },
+    // GCP VM RDP
+    {
+      id: 'gcp_vm_rdp',
+      name: 'GCP VM RDP',
+      method: 'TCP_PING',
+      // 換成你的 VM 公網 IP:3389
+      target: '34.80.123.45:3389',
+      tooltip: 'GCP VM RDP 連線',
+      statusPageLink: 'https://console.cloud.google.com/compute/',
       timeout: 5000,
     },
   ],
