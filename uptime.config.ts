@@ -39,15 +39,25 @@ const workerConfig: WorkerConfig = {
       statusPageLink: 'https://console.cloud.google.com/compute/',
       timeout: 5000,
     },
-    // GCP VM RDP #1
+    // GCP VM SSH #3
     {
-      id: 'gcp_vm_rdp_9708hy_095647',
-      name: '9708hy-095647-rdp',
-      method: 'TCP_PING',
-      target: '136.117.54.74:13800',
-      tooltip: 'GCP VM RDP 連線',
-      statusPageLink: 'https://console.cloud.google.com/compute/',
-      timeout: 5000,
+      id: "gcp_vm_ssh_9708hy_delhi",
+      name: "9708hy-in-delhi-ssh",
+      method: "TCP_PING",
+      target: "34.131.20.139:22",
+      tooltip: "GCP VM SSH \u9023\u7DDA",
+      statusPageLink: "https://console.cloud.google.com/compute/",
+      timeout: 5e3
+    },
+    // GCP VM SSH #4
+    {
+      id: "gcp_vm_ssh_9708hy_tw",
+      name: "9708hy-tw-ssh",
+      method: "TCP_PING",
+      target: "34.80.9.232:22",
+      tooltip: "GCP VM SSH \u9023\u7DDA",
+      statusPageLink: "https://console.cloud.google.com/compute/",
+      timeout: 5e3
     },
   ],
 
